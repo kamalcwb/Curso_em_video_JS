@@ -40,6 +40,14 @@
 
     var nome = window.prompt('Qual o seu nome?')
     document.write(`Seu nome tem ${nome.length} letras`) //Escreve o resultado no body da pagina
+
+    n1 = Number.parseFloat(prompt('Digite o numero'))
+    n2 = Number.parseFloat(prompt('Digite o numero'))
+    s = n1 + n2
+    document.write(`A soma entre os numeros é ${s.toFixed(2)}`) //Mostra apenas 2 casas decimais depois da virgula, mesmo que tenha mais
+
+    n3 = Number.parseFloat(prompt('Qual o seu salario?'))
+    document.write(`Seu Salario é ${n3.toLocaleString('pt-br', { style: 'currency', currency: 'BRL' })}`)
 </script>
 
 </html>
