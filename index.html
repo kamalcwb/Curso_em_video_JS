@@ -23,8 +23,23 @@
     // Number
     //String
     //Boolean
-    var nome = window.prompt('Qual é o seu nome?')
-    window.alert(nome)
+    /*var nome = window.prompt('Qual é o seu nome?')
+    window.alert('é um prazer em te conhecer,' + nome) //sinal de + é concatenação*/
+
+    /*var n1 = Number.parseInt(prompt('Digita o primeiro numero')) // string convertida em Inteiro
+    var n2 = window.prompt('Digite o segundo numero')
+    var n3 = Number(prompt('Digite o terceiro numero')) //String convertido em numero (se for digitado float ele converte sozinho)
+    var soma = (n1) + Number.parseFloat(n2) + (n3)
+    window.alert('A soma entre os numeros é:' + soma) //Resultado com string concatenado com variavel
+    window.alert(`A soma entre os numeros é ${soma}`) // Resultado usando placeHoler (usar entre `` e não entre "")*/
+
+    //Formatando Strings
+    //nome.length (mostra quantos caracteres tem a string)
+    //nome.toUpperCase() (converte a string para letras maiusculas)
+    //nome.LowerCase() (converte a string para letras minusculas)
+
+    var nome = window.prompt('Qual o seu nome?')
+    document.write(`Seu nome tem ${nome.length} letras`) //Escreve o resultado no body da pagina
 </script>
 
 </html>
