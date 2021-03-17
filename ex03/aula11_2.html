@@ -15,11 +15,11 @@
     <div class="res"></div>
 
     <script>
-        const cidadania = document.querySelector('input#cid')
+        const cidadania = document.getElementById('cid')
         const res = document.querySelector('div.res')
         function cid() {
-            let cidad = cid.value
-            if (cidad == 'br') {
+            const pais = (cidadania.value)
+            if (pais == 'br') {
                 res.innerHTML = `Você é brasileiro!`
             } else {
                 res.innerHTML = `Você é estrangeiro!`
