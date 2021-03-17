@@ -11,7 +11,24 @@
 <body>
     <h1>Sistema de verificação de multas</h1>
     velocidade do veículo: <input type="number" name="velocidade" id="txtvel">KM/h
-    <input type="button" value="verificar">
+    <input type="button" value="verificar" onclick="calcular()">
+    <div class="res">
+
+    </div> <br>
+
+    <script>
+        const txtv = document.getElementById('txtvel')
+        const res = document.querySelector('div.res')
+        function calcular() {
+            var vel = Number(txtv.value)
+
+            res.innerHTML = `Sua velocidade é de ${vel}KM/h`
+            if (vel > 60) {
+                res.innerHTML += `Você ultrapassou o limite de velocidade, foi MULTADO!`
+            }
+            res.innerHTML += `Dirija sempre com segurança`
+        }
+    </script>
 </body>
 
 </html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cidadania</title>
+</head>
+
+<body>
+    <h1>Verificação de Cidadania</h1>
+    <input type="text" name="cidadania" id="cid">
+    <button onclick="cid()">Enviar</button>
+    <div class="res"></div>
+
+    <script>
+        const cidadania = document.querySelector('input#cid')
+        const res = document.querySelector('div.res')
+        function cid() {
+            let cidad = cid.value
+            if (cidad == 'br') {
+                res.innerHTML = `Você é brasileiro!`
+            } else {
+                res.innerHTML = `Você é estrangeiro!`
+            }
+        }
+    </script>
+</body>
+
+</html>
