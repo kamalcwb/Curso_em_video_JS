@@ -44,4 +44,5 @@ switch (dia) {
         break
     default:
         console.log('Dia incorreto')
+        break
 }
