@@ -1,6 +1,8 @@
-const idade = 17
-if (idade >= 18) {
-    console.log('Maior de idade')
+const idade = 66
+if (idade < 16) {
+    console.log('Menor de idade, não vota!')
+} else if (idade >= 16 && idade < 18 || idade > 65) {
+    console.log('Menor de idade, voto é opcional')
 } else {
-    console.log('Menor de idade')
+    console.log('Maior de idade, voto obrigatório')
 }
