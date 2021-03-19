@@ -8,10 +8,10 @@ function verificar() {
     } else {
         const sex = document.getElementsByName('radgen')
         const idade = dataAtual - Number(ano.value)
-        const genero = ''
-        if (sex[0]) {
+        let genero = ''
+        if (sex[0].checked) {
             genero = 'Homem'
-        } else {
+        } else if (sex[1].checked) {
             genero = 'Mulher'
         }
         res.innerHTML = `Idade calculada ${idade}, seu genero é ${genero}`
