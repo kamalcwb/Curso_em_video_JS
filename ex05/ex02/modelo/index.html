@@ -5,19 +5,28 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Modelo</title>
+    <title>Variicador de idade</title>
     <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
     <header>
-        <h1>Relogio</h1>
+        <h1>Verificador de idade</h1>
     </header>
     <section>
         <div>
-
+            <p>Ano de nascimento:
+                <input type="number" name="txtano" id="txtano" min="0">
+            </p>
+            <p>Gênero:
+                <input type="radio" id="masc" name="radgen" checked>
+                <label for="masc">Masculino</label>
+                <input type="radio" id="fem" name="radgen">
+                <label for="fem">Feminino</label>
+            </p>
+            <p><button onclick="verificar()">Verificar</button></p>
         </div>
-        <div>
+        <div id="res">
 
         </div>
     </section>
