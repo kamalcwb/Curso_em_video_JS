@@ -19,6 +19,7 @@ footer {
     font-style: italic;
 }
 
-#img {
-    border-radius: 45;
+div {
+    text-align: center;
+    padding: 10px;
 }
