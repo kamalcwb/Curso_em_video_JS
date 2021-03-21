@@ -18,21 +18,27 @@ function verificar() {
                 img.setAttribute('src', './img/homem_crianca.jpg')
             } else if (idade > 13 && idade <= 50) {
                 //jovem
+                img.setAttribute('src', './img/homem_jovem.jpg')
             } else {
                 //idoso
+                img.setAttribute('src', './img/homem_idoso.jpg')
             }
         } else if (sex[1].checked) {
             genero = 'Mulher'
             if (idade >= 0 && idade <= 13) {
                 //criança
+                img.setAttribute('src', './img/mulher_crianca.jpg')
             } else if (idade > 13 && idade <= 50) {
                 //jovem
+                img.setAttribute('src', './img/mulher_jovemjpg')
             } else {
                 //idoso
+                img.setAttribute('src', './img/mulher_idosa.jpg')
             }
         }
         res.style.textAlign = 'center'
         res.innerHTML = `Idade calculada ${idade}, seu genero é ${genero}`
+        res.appendChild(img)
     }
 }
 const data = new Date()
