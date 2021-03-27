@@ -62,3 +62,7 @@ function fatorial2(n) {
 }
 
 console.log(fatorial2(5))
+
+const nomezin = 'kamal'
+let nomezaum = nomezin.toUpperCase
+console.log(nomezaum)

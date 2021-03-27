@@ -56,3 +56,7 @@ function finalizar() {
         res.innerHTML += `<p>A média dos valores é ${media}</p>`
     }
 }
+
+
+
+//FUNCTIONS, OBJETOS, MODULARIZAÇÃO, RegEx, JSON, AJAX, NodeJS
