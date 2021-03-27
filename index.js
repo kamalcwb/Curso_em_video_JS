@@ -32,3 +32,33 @@ for (let i in nome) {
 nome.indexOf('kamal') //retorna o index onde 'kamal' está
 
 //Funçoes
+const n0 = 4
+function paripm(n) {
+    if (n % 2 == 0) {
+        return 'O número é par'
+    } else {
+        console.log('O numero é impar')
+    }
+}
+paripm(n0)
+const res = paripm(5)
+console.log(res)
+
+function fatorial(n) {
+    let f = 1
+    for (let c = n; c > 1; c--) {
+        f *= c
+    }
+    return f
+}
+console.log(fatorial(5))
+
+function fatorial2(n) {
+    if (n == 1) {
+        return 1
+    } else {
+        return n * fatorial2(n - 1)
+    }
+}
+
+console.log(fatorial2(5))
