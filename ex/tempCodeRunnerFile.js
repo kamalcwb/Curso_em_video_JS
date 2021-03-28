@@ -1,2 +1,1 @@
-    k = k / 2
-    dias++
+console.log(`${c} dias`)
